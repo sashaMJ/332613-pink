@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Юрковская](https://up.htmlacademy.ru/adaptive/11/user/332613).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Одноколова](https://htmlacademy.ru/profile/id38936).
 
 ---
 
