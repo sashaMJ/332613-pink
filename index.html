@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo">Pink</div>
+    <div class="page-header__logo"><span class="visually-hidden">Pink</span></div>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main‐nav__item main‐nav__item‐‐active">Главная</li>
@@ -23,16 +24,20 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="index-main">
     <article class="download-app">
-      <div class="download-app__photo"><img src="http://placehold.it/150x100"></div>
-      <a class="download-app__btn" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
-      <div class="download‐links">
-        <a class="download‐links__item download‐links__item--ios">Мы в ios</a>
-        <a class="download‐links__item download‐links__item--android">Мы в android</a>
-        <a class="download‐links__item download‐links__item--windows">Мы в windows</a>
+      <div class="download-app__photo"><img src="img/iphone-hand-mobile@1x.png"></div>
+      <div class="download-app__download-wrap">
+        <a class="download-app__btn" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
+        <div class="download‐links">
+          <a class="download‐links__item download‐links__item--ios"><span class="visually-hidden">Мы в ios</span></a>
+          <a class="download‐links__item download‐links__item--android"><span
+            class="visually-hidden">Мы в android</span></a>
+          <a class="download‐links__item download‐links__item--windows"><span
+            class="visually-hidden">Мы в windows</span></a>
+        </div>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </article>
 
     <section class="offers">
@@ -40,27 +45,25 @@
         <h2 class="offers__title">Устали от серости мегаполиса? </h2>
         <span>Нам есть, что вам предложить!</span>
       </div>
+      <div class="offers__wrap">
+        <section class="offers__list">
+          <h3 class="offers__list-title">Поднимает настроение</h3>
+          <p class="offers__list-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </section>
 
-      <section class="offers__list">
-        <img src="http://placehold.it/150x100">
-        <h3 class="offers__list-title">Поднимает настроение</h3>
-        <p class="offers__list-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-          несколько кликов!</p>
-      </section>
+        <section class="offers__list">
+          <h3 class="offers__list-title">Меняет мир вокруг</h3>
+          <p class="offers__list-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
+        </section>
 
-      <section class="offers__list">
-        <img src="http://placehold.it/150x100">
-        <h3 class="offers__list-title">Меняет мир вокруг</h3>
-        <p class="offers__list-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-          усилить эффект</p>
-      </section>
-
-      <section class="offers__list">
-        <img src="http://placehold.it/150x100">
-        <h3 class="offers__list-title">Заводит новых друзей</h3>
-        <p class="offers__list-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями
-          и заводите новых</p>
-      </section>
+        <section class="offers__list">
+          <h3 class="offers__list-title">Заводит новых друзей</h3>
+          <p class="offers__list-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями
+            и заводите новых</p>
+        </section>
+      </div>
     </section>
 
     <section class="reviews">
@@ -78,13 +81,15 @@
       </div>
     </section>
 
-    <div class="table slider">
-
+    <div class="table-price-wrap">
       <table class="table-price">
         <thead class="table-price__head">
         <tr>
+          <th class="visually-hidden"></th>
           <th class="table-price__name">База<span class="table-head__sum"> 1,99 USD</span></th>
-          <th class="table-price__name">Стандарт<span class="table-head__sum"> 3,99 USD</span></th>
+          <th class="table-price__name">Стандарт<span class="table-head__sum"> 3,99 USD</span>
+            <input class="table-autofocus" type="text" autofocus>
+          </th>
           <th class="table-price__name">Анлим<span class="table-head__sum"> 9,99 USD</span></th>
         </tr>
         </thead>
@@ -92,19 +97,19 @@
         <tr>
           <td class="table-body__cell">Розовый фильтр</td>
           <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
-          <td class="table-body__cell table-body__cell--uncheck">Смайлики</td>
-          <td class="table-body__cell table-body__cell--uncheck">Комментарии</td>
+          <td class="table-body__cell table-body__cell--uncheck">Розовый фильтр</td>
+          <td class="table-body__cell table-body__cell--uncheck">Розовый фильтр</td>
         </tr>
         <tr>
           <td class="table-body__cell">Смайлики</td>
-          <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
           <td class="table-body__cell table-body__cell--check">Смайлики</td>
-          <td class="table-body__cell table-body__cell--uncheck">Комментарии</td>
+          <td class="table-body__cell table-body__cell--check">Смайлики</td>
+          <td class="table-body__cell table-body__cell--uncheck">Смайлики</td>
         </tr>
         <tr>
           <td class="table-body__cell">Комментарии</td>
-          <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
-          <td class="table-body__cell table-body__cell--check">Смайлики</td>
+          <td class="table-body__cell table-body__cell--check">Комментарии</td>
+          <td class="table-body__cell table-body__cell--check">Комментарии</td>
           <td class="table-body__cell table-body__cell--check">Комментарии</td>
         </tr>
         </tbody>
@@ -119,19 +124,19 @@
 
     <section class="feedback">
       <h2 class="feedback__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <div class="feedback__number">
+      <div class="feedback__item">
         <span class="feedback__caption">Звоните:</span>
         <a class="feedback__descr" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </div>
 
-      <div class="feedback__mail">
+      <div class="feedback__item">
         <span class="feedback__caption">Пишите:</span>
         <a class="feedback__descr" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
 
-      <div class="feedback__address">
+      <div class="feedback__item">
         <span class="feedback__caption">Приезжайте в гости:</span>
-        <span class="feedback__descr">ул. Большая Конюшенная, 19/8</span>
+        <span class="feedback__descr">ул. Большая<br>Конюшенная, 19/8</span>
       </div>
     </section>
 
