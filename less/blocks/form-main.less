@@ -1,0 +1,64 @@
+.form-main__headline {
+  .headline-title();
+}
+
+.form-main__headline-title {
+  .headline-title-text();
+  padding: 31px 20px 57px 12px;
+}
+
+.form-main__descr {
+  text-align: center;
+}
+
+.form-main__caption {
+  padding: 31px 23px 19px 23px;
+  .headline-caption();
+}
+
+.form-main__caption-hide {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .form-main__headline {
+    min-height: 328px;
+  }
+
+  .form-main__headline-title {
+    font-size: 50px;
+    padding: 71px 20px 57px 14px;
+  }
+
+  .form-main__descr {
+    min-height: 212px;
+  }
+
+  .form-main__caption {
+    font-size: 18px;
+    padding: 75px 43px 19px 54px;
+  }
+
+  .form-main__caption-hide {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  .form-main__headline {
+    min-height: 290px;
+    padding-left: 8px;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .form-main__descr {
+    min-height: 167px;
+  }
+
+  .form-main__caption {
+    padding-left: 85px;
+    padding-right: 90px;
+    padding-top: 70px;
+  }
+}

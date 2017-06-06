@@ -2,37 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фотографии</title>
-  <link rel="stylesheet" href="/css/style.css"/>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__logo"><span class="visually-hidden">Pink</span></div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main‐nav__item main‐nav__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main‐nav__item main‐nav__item‐‐active">
-          <a href="#">Фотографии</a>
-        </li>
-        <li class="main‐nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main‐nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="photo-main">
-    <div class="photo-main__headline">
+  <div class="bg-header-wrap">
+    <div class="page-header-wrap">
+      <header class="page-header container">
+        <div class="page-header__logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="146.3px" height="40.375px" alt="Логотип">
+          <span class="visually-hidden">Pink</span>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main‐nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main‐nav__item main‐nav__item‐‐active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main‐nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main‐nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="photo-main__headline container">
       <h1 class="photo-main__headline-title">Фотографии пользователей</h1>
     </div>
+  </div>
 
+  <main class="photo-main container">
     <div class="photo-main__descr">
-      <p class="photo-main__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+      <p class="photo-main__caption">Взгляните на фотографии, которые выкладывают <br class="photo-main__caption-hide">
+        пользователи! Видите, как не
         хватает ваших?</p>
     </div>
 
@@ -115,58 +123,57 @@
           <span class="photo-card__like">Нравится: 2560</span>
         </div>
       </article>
+    </div>
 
-      <div class="photo-card__footer">
-        <p>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="photo-card__footer">
+      <p>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+
+    <section class="photo-filter-wrap">
+      <div class="photo-filter-wrap__img">
+        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374">
       </div>
-
-      <section class="photo-filter-wrap">
-        <div class="filter-photo">
-          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374">
-        </div>
+      <div class="photo-filter-wrap__effects">
 
         <div class="range-controls range-controls--active">
-          <div class="range-controls__scale">
-            <div class="range-controls__scale-bar"></div>
-          </div>
-          <div class="range-controls-toggle"></div>
+            <div class="range-controls__bar"></div>
+          <div class="range-controls__toggle"></div>
         </div>
 
         <div class="range-controls range-controls--pouring">
-          <div class="range-controls__scale">
-            <div class="range-controls__scale-bar"></div>
-          </div>
-          <div class="range-controls-toggle"></div>
+            <div class="range-controls__bar"></div>
+          <div class="range-controls__toggle"></div>
         </div>
 
         <div class="range-controls range-controls--bright">
-          <div class="range-controls__scale">
-            <div class="range-controls__scale-bar"></div>
-          </div>
+            <div class="range-controls__bar"></div>
           <div class="range-controls__toggle"></div>
         </div>
+
 
         <div class="send-btn-photo">
           <button class="send-btn-photo send-btn-photo--active" type="submit">Запостить</button>
           <button class="send-btn-photo send-btn-photo--cancel">Отмена</button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__logo">
-      <span class="visually-hidden">Pink</span>
+  <footer class="page-footer container">
+    <div class="page-footer__wrap">
+      <div class="page-footer__logo">
+        <span class="visually-hidden">Pink</span>
+      </div>
+      <div class="page-footer__social-links">
+        <a class="page-footer__social page-footer__social--twitter" href="#"><span
+          class="visually-hidden">Твиттер</span></a>
+        <a class="page-footer__social page-footer__social--facebook" href="#"><span
+          class="visually-hidden">Фейсбук</span></a>
+        <a class="page-footer__social page-footer__social--youtube" href="#"><span
+          class="visually-hidden">Ютуб</span></a>
+      </div>
+      <div class="page-footer__copyright"><span>Разработано</span></div>
     </div>
-    <div class="page-footer__social-links">
-      <a class="page-footer__social page-footer__social--twitter" href="#"><span
-        class="visually-hidden">Твиттер</span></a>
-      <a class="page-footer__social page-footer__social--facebook" href="#"><span
-        class="visually-hidden">Фейсбук</span></a>
-      <a class="page-footer__social page-footer__social--youtube" href="#"><span
-        class="visually-hidden">Ютуб</span></a>
-    </div>
-    <div class="page-footer__copyright"><span>Разработано</span></div>
   </footer>
 </body>
 </html>

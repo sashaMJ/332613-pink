@@ -1,0 +1,156 @@
+.reviews__wrapper {
+  min-height: 310px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 16px;
+  padding-right: 22px
+}
+
+.reviews__research {
+  display: none;
+  width: 295px;
+  padding-top: 55px;
+}
+
+.reviews__research-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.reviews__research-descr {
+  width: 307px;
+  .offers-descr();
+  margin-top: 10px;
+}
+
+.reviews__research a {
+  color: @color-pink;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__name-age {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__text-wrap {
+  display: block;
+}
+
+@media (min-width: 660px) {
+
+  .reviews__bg-wrap {
+    background-color: white;
+  }
+
+  .reviews__research {
+    display: block;
+    height: 272px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    order: 0;
+    padding-top: 57px;
+    padding-bottom: 17px;
+    padding-right: 18px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .reviews__name-age {
+    display: block;
+    order: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews__bg-wrap {
+    background-color: @bg-item-form;
+  }
+
+  .reviews__research {
+    min-height: 350px;
+    padding-top: 118px;
+  }
+
+  .reviews__research-title .hide {
+    display: none;
+  }
+
+  .reviews__research-title {
+    line-height: 30px;
+  }
+
+  .reviews__research-descr {
+    width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+
+  }
+
+  .reviews__research a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    padding-top: 155px;
+    padding-right: 138px;
+    padding-left: 138px;
+  }
+
+  .reviews__text-hide {
+    display: none;
+  }
+
+  .reviews__name {
+    font-size: 24px;
+    line-height: 30px;
+    padding-right: 5px;
+  }
+
+  .reviews__name-age {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__wrapper {
+    min-height: 470px;
+  }
+
+  .reviews__text-wrap {
+    width: 555px;
+  }
+}

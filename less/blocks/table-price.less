@@ -3,7 +3,7 @@
 }
 
 .table-price__head th {
-  height: 99px;
+  height: 97px;
   min-width: 276px;
   border-right: 3px solid @border-input-color;
 }
@@ -30,4 +30,33 @@
   cursor: default;
   height: 0;
   display: block;
+}
+
+@media (min-width: 660px) {
+  .table-price__head th {
+    height: 77px;
+    min-width: 150px;
+    font-size: 16px;
+    line-height: 30px;
+    border: 2px solid white;
+  }
+
+  .table-price__sum {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 960px) {
+  .table-price__head th {
+    height: 96px;
+    min-width: 232px;
+    font-size: 18px;
+  }
+
+  .table-price__sum {
+    font-size: 24px;
+  }
+
 }

@@ -1,0 +1,63 @@
+.send-btn-photo {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: @bg-item-form;
+  font-family: inherit;
+  margin-top: 36px;
+
+  &--active {
+    border: 3px solid @color-pink;
+    color: @color-pink;
+    border-radius: 40px;
+    padding: 15px 87px 15px 87px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+  &--cancel {
+    border: 3px solid #dddfe0;
+    color: #e6e6e7;
+    border-radius: 40px;
+    padding: 15px 100px 15px 100px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 660px) {
+  .send-btn-photo {
+    margin-top: 64px;
+    margin-left: 3px;
+
+    &--active {
+      display: block;
+      padding-left: 77px;
+      padding-right: 77px;
+      margin-bottom: 17px;
+    }
+
+    &--cancel {
+      padding-left: 90px;
+      padding-right: 90px;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .send-btn-photo {
+    margin-top: 73px;
+    margin-left: 0;
+
+    &--active {
+      display: inline-block;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-right: 40px;
+    }
+
+    &--cancel {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}

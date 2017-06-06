@@ -1,0 +1,38 @@
+.table-body {
+  background-color: white;
+}
+
+.table-body__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 1px solid @border-input-color;
+  border-top: 0;
+  padding: 15px 0 15px 20px;
+}
+
+@media (min-width: 660px) {
+  .table-body__cell-hide {
+    display: none;
+  }
+
+  .table-body__cell {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 30px;
+    border: 2px solid @border-input-color;
+    padding-top: 6px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 960px) {
+  .table-body__cell {
+    font-size: 18px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+  }
+
+}
