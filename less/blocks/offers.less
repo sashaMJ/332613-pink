@@ -1,0 +1,136 @@
+.offers {
+  text-align: center;
+}
+
+.offers__list {
+  margin: 0 auto;
+  width: 275px;
+  padding-left: 22px;
+}
+
+.offers__text {
+  min-height: 230px;
+}
+
+.offers__title {
+  .offers-text();
+  padding-top: 21px;
+  padding-bottom: 13px;
+}
+
+.offers__text span {
+  .offers-text();
+  padding-top: 21px;
+  padding-bottom: 13px;
+}
+
+.offers__wrap {
+  min-height: 717px;
+  text-align: center;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 475px;
+  padding-top: 35px;
+  padding-right: 22px;
+}
+
+.offers__list-title {
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-top: 14px;
+  margin: 0;
+}
+
+.offers__list-descr {
+  .offers-descr();
+}
+
+.offers__bg-wrap {
+  background-color: @bg-item-form;
+}
+
+@media (min-width: 660px) {
+  .offers__text {
+    min-height: 190px;
+    padding-top: 51px;
+    vertical-align: middle;
+  }
+
+  .offers__text h2,
+  .offers__text span {
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+  }
+
+  .offers__text span {
+    display: inline-block;
+    width: 335px;
+  }
+
+  .offers__list {
+    margin: 0;
+    width: 49%;
+    text-align: left;
+    padding-left: 51.5%;
+    padding-top: 6px;
+  }
+
+  .offers__wrap {
+    min-height: 441px;
+    background-position: 82px 34px;
+    padding-top: 50px;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .offers__text h2,
+  .offers__text span {
+    font-size: 50px;
+    padding-left: 0;
+  }
+
+  .offers__text span {
+    width: 450px;
+  }
+
+  .offers__text {
+    min-height: 257px;
+    padding-top: 69px;
+  }
+
+  .offers__wrap {
+    min-height: 234px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 333px;
+    background-image: none;
+  }
+
+  .offers__list-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .offers__list {
+    width: 240px;
+    height: 220px;
+    text-align: center;
+    padding-left: 0;
+    margin-right: 40px;
+    margin-left: 39px;
+  }
+
+  .offers__list-descr {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 25px;
+
+  }
+}

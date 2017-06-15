@@ -1,0 +1,133 @@
+.download-app {
+  position: relative;
+  background-color: @download-bg;
+  color: white;
+}
+
+.download-app__photo {
+  min-height: 396px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-x: -190px;
+  background-position-y: -66px;
+}
+
+.download-app__photo img {
+  margin-top: 110px;
+}
+
+.download-app__download-wrap {
+  min-height: 268px;
+  text-align: center;
+}
+
+.download-app__btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  border: 3px solid white;
+  padding: 14px 39px 17px 35px;
+  border-radius: 30px;
+  margin-top: 23px;
+}
+
+.download-app__download-wrap p {
+  width: 240px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  padding-top: 15px;
+  margin: 0;
+  padding-left: 41px;
+}
+
+.download-app__hide {
+  display: none;
+  font-size: 40px;
+  font-weight: lighter;
+  width: 200px;
+  padding-left: 50px;
+}
+
+@media (min-width: 660px) {
+  .download-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position-x: -190px;
+    background-position-y: -66px;
+  }
+
+  .download-app__photo {
+    order: 1;
+    min-height: 618px;
+    background-image: none;
+  }
+
+  .download-app__download-wrap {
+    .transparent-background();
+  }
+
+  .download-app__btn {
+    padding: 14px 51px 17px 40px;
+    margin-top: 25px;
+    margin-right: 68px;
+  }
+
+  .download-app__hide {
+    display: block;
+    font-size: 40px;
+    padding-left: 47px;
+  }
+
+  .download-app__download-wrap p {
+    width: 305px;
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 27px;
+  }
+}
+
+@media (min-width: 960px) {
+  .download-app {
+    justify-content: flex-start;
+    background: none;
+    height: 748px;
+  }
+
+  .download-app__btn {
+    margin-top: 57px;
+    font-size: 21px;
+    padding-left: 30px;
+    padding-right: 27px;
+    margin-right: 0;
+  }
+
+  .download-app__hide {
+    font-size: 50px;
+    width: 225px;
+  }
+
+  .download-app p {
+    padding-left: 13px;
+  }
+
+  .download-app__photo {
+    min-height: 727px;
+    background-image: none;
+  }
+
+  .download-app__download-wrap p {
+    padding-top: 44px;
+  }
+
+  .download-app__photo img {
+    margin-left: 50px;
+  }
+}
