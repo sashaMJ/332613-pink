@@ -11,8 +11,11 @@
     <div class="page-header-wrap">
       <header class="page-header container">
         <div class="page-header__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="146.3px" height="40.375px" alt="Логотип">
-          <span class="visually-hidden">Pink</span>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" >
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="photo-card__img">
+          </picture>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -33,7 +36,13 @@
       </header>
     </div>
     <article class="download-app container">
-      <div class="download-app__photo"><img src="img/iphone-hand-mobile@1x.png"></div>
+      <div class="download-app__photo">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x" >
+          <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"  alt="Приложение Pink" class="photo-card__img">
+        </picture>
+      </div>
       <div class="download-app__download-wrap">
         <span class="download-app__hide">Взгляните на жизнь иначе!</span>
         <a class="download-app__btn" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
@@ -81,6 +90,9 @@
     <section class="reviews">
       <div class="reviews__bg-wrap">
         <div class="reviews__research container">
+          <div class="reviews__timer">
+            <span>24</span>
+          </div>
           <div class="reviews__text-wrap">
             <h3 class="reviews__research-title">Эффект<br class="hide"> на 24 часа!</h3>
             <p class="reviews__research-descr">Британские ученые провели исследования и доказали, что положительный
@@ -97,14 +109,13 @@
         <p class="reviews__text"><span class="reviews__text-hide">«</span>Это приложение перевернуло мой мир и позволило
           по-новому взглянуть на привычные серые
           вещи!
-          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span
-            class="reviews__text-hide">»</span></p>
+          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__text-hide">»</span></p>
       </div>
 
       <div class="reviews__pagination container">
-        <span class="reviews__pagination reviews__pagination‐‐active"></span>
-        <span class="reviews__pagination‐item"></span>
-        <span class="reviews__pagination‐item"></span>
+        <span class="reviews__pagination reviews__pagination-‐active"></span>
+        <span class="reviews__pagination reviews__pagination-‐item"></span>
+        <span class="reviews__pagination reviews__pagination-‐item"></span>
       </div>
     </section>
 
@@ -114,7 +125,8 @@
         <tr>
           <th class="visually-hidden"></th>
           <th class="table-price__name">База<span class="table-price__sum"> 1,99 USD</span></th>
-          <th class="table-price__name">Стандарт<span class="table-price__sum"> 3,99 USD</span></th>
+          <th class="table-price__name">Стандарт<span class="table-price__sum"> 3,99 USD</span>
+            <input name="autofocus" autofocus> </th>
           <th class="table-price__name">Анлим<span class="table-price__sum"> 9,99 USD</span></th>
         </tr>
         </thead>
@@ -123,25 +135,25 @@
           <td class="table-body__cell">Розовый фильтр</td>
           <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Розовый фильтр</span>
           </td>
-          <td class="table-body__cell table-body__cell--uncheck"><span
+          <td class="table-body__cell table-body__cell--check"><span
             class="table-body__cell-hide">Розовый фильтр</span>
           </td>
-          <td class="table-body__cell table-body__cell--uncheck"><span
+          <td class="table-body__cell table-body__cell--check"><span
             class="table-body__cell-hide">Розовый фильтр</span>
           </td>
         </tr>
         <tr>
           <td class="table-body__cell">Смайлики</td>
+          <td class="table-body__cell table-body__cell--uncheck"><span class="table-body__cell-hide">Смайлики</span></td>
           <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Смайлики</span></td>
-          <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Смайлики</span></td>
-          <td class="table-body__cell table-body__cell--uncheck"><span class="table-body__cell-hide">Смайлики</span>
+          <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Смайлики</span>
           </td>
         </tr>
         <tr>
           <td class="table-body__cell">Комментарии</td>
-          <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Комментарии</span>
+          <td class="table-body__cell table-body__cell--uncheck"><span class="table-body__cell-hide">Комментарии</span>
           </td>
-          <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Комментарии</span>
+          <td class="table-body__cell table-body__cell--uncheck"><span class="table-body__cell-hide">Комментарии</span>
           </td>
           <td class="table-body__cell table-body__cell--check"><span class="table-body__cell-hide">Комментарии</span>
           </td>
@@ -150,9 +162,9 @@
       </table>
 
       <div class="table__pagination">
-        <span class="table__pagination‐item"></span>
-        <span class="table__pagination-item table__pagination-item‐‐active"></span>
-        <span class="table__pagination‐item"></span>
+        <span class="table__pagination table__pagination-‐item"></span>
+        <span class="table__pagination table__pagination-‐active"></span>
+        <span class="table__pagination table__pagination-‐item"></span>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 .reviews__wrapper {
-  min-height: 310px;
+  min-height: 241px;
   text-align: center;
   padding-top: 25px;
 }
@@ -54,22 +54,39 @@
   display: block;
 }
 
-@media (min-width: 660px) {
+.reviews__pagination {
+  margin-bottom: 33px;
+  text-align: center;
 
+  &-‐active {
+    .mobile-pagination-active();
+    margin-bottom: 32px;
+  }
+
+  &-‐item {
+    .mobile-pagination-item();
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 660px) {
   .reviews__bg-wrap {
     background-color: white;
   }
 
   .reviews__research {
-    display: block;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
     height: 272px;
+    padding-top: 45px;
   }
 
   .reviews__wrapper {
     min-height: 380px;
     display: flex;
     flex-direction: column;
-    padding-top: 18px;
+    padding-top: 30px;
 
   }
 
@@ -82,6 +99,11 @@
     padding-right: 18px;
   }
 
+  .reviews__text-wrap {
+    padding-top: 7px;
+    padding-right: 23px;
+  }
+
   .reviews__name {
     font-size: 20px;
     line-height: 30px;
@@ -92,6 +114,29 @@
     display: block;
     order: 2;
   }
+
+  .reviews__timer {
+    background-image: url(../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    height: 345px;
+    width: 312px;
+    text-align: center;
+  }
+
+  .reviews__timer span {
+    font-size: 94px;
+    color: #d22856;
+    font-weight: bold;
+    margin-top: 58px;
+    display: inline-block;
+    margin-right: 35px;
+    border: 15px solid;
+    border-radius: 50%;
+    width: 170px;
+    height: 144px;
+    padding-top: 27px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -100,8 +145,9 @@
   }
 
   .reviews__research {
-    min-height: 350px;
-    padding-top: 118px;
+    width: 960px;
+    min-height: 413px;
+    padding-top: 53px;
   }
 
   .reviews__research-title .hide {
@@ -149,9 +195,32 @@
 
   .reviews__wrapper {
     min-height: 470px;
+    padding-top: 20px;
   }
 
   .reviews__text-wrap {
     width: 555px;
+    padding-top: 64px;
+    padding-right: 53px;
   }
+
+  .reviews__timer {
+    background-size: 467px;
+    background-position-x: -70px;
+    width: 440px;
+    padding-right: 35px;
+    background-position-y: 4px;
+  }
+
+  .reviews__timer span {
+    font-size: 115px;
+    margin-top: 72px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 33px;
+    margin-right: 20px;
+    border: 18px solid;
+  }
+
 }

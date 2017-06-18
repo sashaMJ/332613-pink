@@ -64,10 +64,20 @@
   display: inline-block;
 }
 
+.page-footer__logo {
+  background-image: url(../img/logo-pink-blue-mobile.svg);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 83px;
+  background-position-y: 3px;
+  background-position-x: 17px;
+
+}
+
 @media (min-width: 660px) {
   .page-footer {
     min-height: 0;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 0;
     display: inline-block;
     text-align: inherit;
@@ -79,13 +89,18 @@
   }
 
   .page-footer__social-links {
-    padding-right: 74px
+    padding-right: 50px
   }
 
   .page-footer__copyright {
     padding-top: 12px;
     background-position-y: 11px;
-    background-position-x: 94px;
+    background-position-x: 105px;
+  }
+
+  .page-footer__logo {
+    background-position-y:0;
+    background-position-x: 0;
   }
 }
 
@@ -97,7 +112,7 @@
   }
 
   .page-footer__social-links {
-    padding-right: 45px;
+    padding-right: 20px;
     padding-top: 5px;
   }
 
@@ -107,8 +122,8 @@
 
   .page-footer__copyright {
     padding-right: 32px;
-    background-position-y: 13px;
-    background-position-x: 125px;
+    background-position-y: 17px;
+    background-position-x: 126px;
   }
 
   .page-footer__wrap {
@@ -117,5 +132,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    background-position-y: 4px;
+    background-position-x: 8px;
   }
 }

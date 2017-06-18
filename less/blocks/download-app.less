@@ -53,15 +53,21 @@
   padding-left: 50px;
 }
 
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
+  .download-app {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+}
+
 @media (min-width: 660px) {
   .download-app {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
-    background-position-x: -190px;
-    background-position-y: -66px;
+    background-size: 1200px auto;
   }
 
   .download-app__photo {
@@ -92,6 +98,13 @@
     font-size: 18px;
     padding-left: 0;
     padding-top: 27px;
+  }
+}
+
+@media (min-width: 660px) and (min-resolution: 144dpi),
+(min-width: 960px) and (min-resolution: 1.5dppx) {
+  .download-app {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
   }
 }
 
@@ -129,6 +142,6 @@
   }
 
   .download-app__photo img {
-    margin-left: 50px;
+    margin-top: 97px;
   }
 }

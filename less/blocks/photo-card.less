@@ -31,6 +31,10 @@
   width: 280px;
 }
 
+.photo-card:nth-child(1) img {
+  height: 136px;
+}
+
 .photo-card__name {
   font-size: 14px;
   line-height: 24px;
@@ -115,7 +119,9 @@
   .photo-card:not(:first-child) .photo-card__img {
     width: 300px;
   }
-
+  .photo-card:nth-child(1) img {
+    height: 509px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -125,7 +131,7 @@
   }
 
   .photo-card:nth-child(1) .photo-card__descr {
-    width: 90%;
+    width: 72%;
     min-height: 72px;
     padding: 25px 40px 0 30px;
   }
@@ -139,8 +145,8 @@
   }
 
   .photo-card:not(:first-child) .photo-card__descr {
-    min-height: 135px;
-    width: 250px;
+    min-height: 132px;
+    width: 255px;
     padding-top: 24px;
     padding-left: 24px;
   }

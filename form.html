@@ -11,8 +11,11 @@
     <div class="page-header-wrap">
       <header class="page-header container">
         <div class="page-header__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="146.3px" height="40.375px" alt="Логотип">
-          <span class="visually-hidden">Pink</span>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" >
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="photo-card__img">
+          </picture>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
