@@ -14,6 +14,24 @@
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+
+  &--hit {
+    position: relative;
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--hit .table-price__name-hit {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 6px;
+    transform: rotate(-45deg);
+    font-weight: normal;
+    font-size: 15px;
+  }
 }
 
 .table-price__sum {
@@ -23,13 +41,6 @@
   font-weight: lighter;
   text-transform: uppercase;
   color: white;
-}
-
-.table-autofocus {
-  opacity: 0;
-  cursor: default;
-  height: 0;
-  display: block;
 }
 
 @media (min-width: 660px) {
@@ -46,6 +57,17 @@
     line-height: 30px;
     font-weight: 300;
   }
+
+  .table-price__name {
+    &--hit {
+      background-image: url(../img/bg-hit-tablet.svg);
+    }
+
+    &--hit .table-price__name-hit {
+      top: 12px;
+      left: 4px;
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -58,5 +80,4 @@
   .table-price__sum {
     font-size: 24px;
   }
-
 }

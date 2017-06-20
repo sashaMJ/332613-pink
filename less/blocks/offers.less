@@ -9,7 +9,7 @@
 }
 
 .offers__text {
-  min-height: 230px;
+  min-height: 197px;
 }
 
 .offers__title {
@@ -30,8 +30,8 @@
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 475px;
-  padding-top: 35px;
+  background-position-y: 509px;
+  padding-top: 70px;
   padding-right: 22px;
 }
 
@@ -50,12 +50,16 @@
 
 .offers__bg-wrap {
   background-color: @bg-item-form;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position-y: -67px;
 }
 
-@media (min-width: 660px) and (min-resolution: 144dpi),
-(min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
   .offers__wrap {
     background-image: url(../img/iphone-screen-mobile@2x.png);
+    background-size: 157px auto;
   }
 }
 
@@ -93,12 +97,17 @@
     padding-top: 50px;
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
   }
+
+  .offers__bg-wrap {
+    background-position-y: -42px;
+  }
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi),
 (min-width: 660px) and (min-resolution: 1.5dppx) {
   .offers__wrap {
     background-image: url(../img/iphone-screen-3-tablet@2x.png);
+    background-size: 268px auto;
   }
 }
 
@@ -164,19 +173,26 @@
   .offers__wrap > :nth-child(3) {
     background-image: url(../img/iphone-screen-3-desktop@1x.png);
   }
+
+  .offers__bg-wrap {
+    background-position-y: 0;
+  }
 }
 
-@media (min-width: 660px) and (min-resolution: 144dpi),
-(min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 960px) and (min-resolution: 144dpi),
+(min-width: 960px) and (min-resolution: 1.5dppx) {
   .offers__wrap > :nth-child(1) {
     background-image: url(../img/iphone-screen-1-desktop@2x.png);
+    background-size: 292px;
   }
 
   .offers__wrap > :nth-child(2) {
     background-image: url(../img/iphone-screen-2-desktop@2x.png);
+    background-size: 292px;
   }
 
   .offers__wrap > :nth-child(3) {
     background-image: url(../img/iphone-screen-3-desktop@2x.png);
+    background-size: 292px;
   }
 }

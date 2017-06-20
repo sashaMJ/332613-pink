@@ -3,6 +3,35 @@
   padding: 20px 20px 0 20px;
   margin-bottom: 27px;
   background-color: @bg-item-form;
+  text-align: center;
+}
+
+.photo-filter-wrap__tools {
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 45px;
+  padding-top: 35px;
+
+  &--1 {
+    background-image: url(../img/icon-editor-crop.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+  }
+
+  &--2 {
+    background-image: url(../img/icon-editor-fill.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    margin: 0 30px;
+  }
+
+  &--3 {
+    background-image: url(../img/icon-editor-contrast.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    padding-top: 17px;
+  }
 }
 
 @media (min-width: 660px) {
@@ -16,6 +45,10 @@
   .photo-filter-wrap__effects {
     width: 275px;
     padding-left: 60px;
+  }
+
+  .photo-filter-wrap__tools {
+    display: none;
   }
 }
 
