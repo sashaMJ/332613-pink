@@ -9,6 +9,10 @@
   background-color: @download-bg;
 }
 
+.page-header__logo-svg {
+  margin-left: -51px;
+}
+
 .bg-header-wrap.menu-hide .page-header__logo {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -16,17 +20,31 @@
 .page-header__switch {
   position: absolute;
   content: "";
-  background-image: url(../../img/icon-menu-cross.svg);
-  background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   right: 13px;
   top: 20px;
 }
 
+.page-header__switch-cross:hover {
+  fill: @color-pink;
+}
+
+.page-header__switch-cross:active {
+  fill: #5d334c;
+}
+
 .bg-header-wrap.menu-hide .page-header__switch {
-  background-image: url(../../img/icon-menu-burger.svg);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 15%, transparent 10%, transparent 45%, #FFFFFF 40%, #FFFFFF 60%, transparent 0%, transparent 85%, #FFFFFB 90%, #FFFFFF 100%);
   width: 50px;
+}
+
+.bg-header-wrap.menu-hide .page-header__switch:hover {
+  background: linear-gradient(to bottom, #d22856 0%, #d22856 15%, transparent 10%, transparent 45%, #d22856 40%, #d22856 60%, transparent 0%, transparent 85%, #d22856 90%, #d22856 100%);
+}
+
+.bg-header-wrap.menu-hide .page-header__switch:active {
+  background: linear-gradient(to bottom, #5d334c 0%, #5d334c 15%, transparent 10%, transparent 45%, #5d334c 40%, #5d334c 60%, transparent 0%, transparent 85%, #5d334c 90%, #5d334c 100%);
 }
 
 .page-header__logo-star,
@@ -35,12 +53,6 @@
   display: none;
 }
 
-/* бургерр
-.page-header__switch.burger {
-  background-image: url(../img/icon-menu-burger.svg);
-  width: 50px;
-}
-*/
 @media (min-width: 660px) {
   .page-header__logo {
     padding-top: 28px;
@@ -59,6 +71,10 @@
 
   .page-header__logo-glasses {
     display: block;
+  }
+
+  .page-header__logo-svg {
+    margin-left: 0;
   }
 }
 
@@ -87,6 +103,14 @@
   .page-header__logo-star,
   .page-header__logo-text-star {
     display: block;
+  }
+
+  .page-header__logo-svg:hover {
+    fill: #D22856;
+  }
+
+  .page-header__logo-svg:active {
+    opacity: 0.3;
   }
 }
 
