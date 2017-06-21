@@ -72,7 +72,7 @@
   top: 15px;
   width: 15px;
   height: 15px;
-  background-image: url(../img/icon-heart.svg);
+  background-image: url(../../img/icon-heart.svg);
   background-repeat: no-repeat;
 }
 
@@ -111,7 +111,7 @@
       align-self: flex-start;
     }
     & .photo-card__user-text {
-      order:2;
+      order: 2;
       align-self: flex-start;
     }
     & .photo-card__like {
@@ -172,6 +172,20 @@
 
   .photo-card__insc {
     top: 55px;
+  }
+
+  .photo-card:nth-child(1) .photo-card__like {
+    padding-right: 40px;
+  }
+
+  .photo-card:nth-child(1) .photo-card__like::after {
+    left: 107px;
+    top: 6px;
+  }
+
+  .photo-card:not(:first-child) .photo-card__like::after {
+    left: 230px;
+    top: 41px;
   }
 }
 

@@ -14,20 +14,20 @@
   padding-top: 35px;
 
   &--1 {
-    background-image: url(../img/icon-editor-crop.svg);
+    background-image: url(../../img/icon-editor-crop.svg);
     background-repeat: no-repeat;
     width: 50px;
   }
 
   &--2 {
-    background-image: url(../img/icon-editor-fill.svg);
+    background-image: url(../../img/icon-editor-fill.svg);
     background-repeat: no-repeat;
     width: 50px;
     margin: 0 30px;
   }
 
   &--3 {
-    background-image: url(../img/icon-editor-contrast.svg);
+    background-image: url(../../img/icon-editor-contrast.svg);
     background-repeat: no-repeat;
     width: 50px;
     padding-top: 17px;
@@ -43,12 +43,29 @@
   }
 
   .photo-filter-wrap__effects {
+    display: flex;
+    flex-direction: column;
     width: 275px;
-    padding-left: 60px;
+    padding-left: 63px;
+  }
+
+  .photo-filter-wrap__effects-wrap {
+    display: flex;
   }
 
   .photo-filter-wrap__tools {
-    display: none;
+    min-height: 39px;
+    width: 50px;
+    background-size: 25px;
+    padding-top: 10px;
+    margin-bottom: 22px;
+    &--2 {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  .photo-filter-wrap__tools span {
+    border-bottom: 1px solid darkgrey;
   }
 }
 
@@ -66,5 +83,13 @@
   .photo-filter-wrap__effects {
     width: 450px;
     padding-left: 0;
+  }
+  .photo-filter-wrap__tools {
+    background-size: 45px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+    &--3 {
+      background-size: 33px;
+    }
   }
 }
