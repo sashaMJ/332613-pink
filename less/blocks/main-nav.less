@@ -1,17 +1,28 @@
+.main-nav {
+  display: block;
+  background-color: @download-bg;
+}
+
+.bg-header-wrap.menu-hide .main-nav {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 0;
+  border-top: 2px solid black;
 }
 
 .main-nav__list li {
-  min-height: 64px;
+  min-height: 63px;
   vertical-align: middle;
   list-style-type: none;
   .main-nav-text();
   align-self: stretch;
+  box-shadow: 0 1px 0 0 black, 0.5px -1px 0 0 grey;
 }
 
 .main-nav__list a {
@@ -22,8 +33,14 @@
 }
 
 @media (min-width: 960px) {
+  .main-nav {
+    background-color: transparent;
+    display: block;
+  }
+
   .main-nav ul {
     flex-direction: row;
+    border-top: none;
   }
 
   .main-nav__list a {
@@ -38,6 +55,7 @@
     padding-right: 82px;
     padding-top: 30px;
     padding-bottom: 34px;
+    box-shadow: none;
   }
 
   .main-nav__list :last-child {

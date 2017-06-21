@@ -1,18 +1,49 @@
 .map {
-  min-height: 220px;
-  background-image: url(../img/bg-map-mobile@1x.png);
+  position: relative;
+}
+
+.map__triangle {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70px;
+  z-index: 2;
+  background-image: url(../../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
+  top: 0;
+  background-position-y: 0;
+  background-size: 320px;
+}
+
+.map__id {
+  height: 200px;
 }
 
 @media (min-width: 660px) {
-  .map {
-    min-height: 373px;
+  .map__id {
+    height: 375px;
+    background-position-x: -7px;
+    background-position-y: 0;
+    background-size: 700px;
+  }
+
+  .map__triangle {
+    background-size: 660px;
   }
 }
 
 @media (min-width: 960px) {
-  .map {
-    min-height: 497px;
+  .map__id {
+    height: 502px;
     margin-bottom: 30px;
+    background-position-x: 0;
+    background-position-y: -3px;
+    background-size: 1200px;
+  }
+
+  .map__triangle {
+    background-size: 100%;
+    height: 200px;
+    top: -2px
   }
 }
