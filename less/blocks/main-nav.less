@@ -32,6 +32,14 @@
   display: inline-block;
 }
 
+.main-nav__list a:hover {
+  color: #D22856;
+}
+
+.main-nav__list a:active {
+  color: rgba(210, 40, 86, 0.5);
+}
+
 @media (min-width: 960px) {
   .main-nav {
     background-color: transparent;
@@ -62,4 +70,13 @@
     padding-right: 0;
   }
 
+  .main-nav__list a:active {
+    color: white;
+    opacity: 0.3;
+  }
+
+  .main-nav__list a.active span {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
 }

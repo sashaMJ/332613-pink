@@ -134,7 +134,7 @@
 
   .photo-card:nth-child(1) .photo-card__descr {
     width: 87%;
-    min-height: 97px;
+    min-height: 99px;
     padding-left: 26px;
     padding-top: 24px;
   }
@@ -148,6 +148,9 @@
     width: 250px;
     padding-top: 23px;
     padding-left: 28px;
+    & p {
+      min-height: 52px;
+    }
   }
 
   .photo-card:not(:first-child) .photo-card__img-wrap {
@@ -183,9 +186,12 @@
     top: 6px;
   }
 
+  .photo-card:not(:first-child) .photo-card__like {
+    padding-left: 0;
+  }
+
   .photo-card:not(:first-child) .photo-card__like::after {
-    left: 230px;
-    top: 41px;
+    left: 225px;
   }
 }
 
@@ -199,10 +205,6 @@
     width: 72%;
     min-height: 72px;
     padding: 25px 40px 0 30px;
-  }
-
-  .photo-card:nth-child(1) {
-    padding: 0 0 50px 0;
   }
 
   .photo-card:not(:first-child) .photo-card__img-wrap {
@@ -221,5 +223,9 @@
     padding-bottom: 60px;
     margin-bottom: 7px;
     margin-top: 0;
+  }
+
+  .photo-card__insc {
+    right: 135px;
   }
 }

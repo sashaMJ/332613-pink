@@ -489,10 +489,12 @@
     margin-top: 0;
     margin-right: 73px;
   }
+
   .form-wrap__fieldset-inner:first-of-type::before {
-    top:1px;
+    top: 1px;
     right: 17px;
   }
+
   .form-wrap__fieldset-inner:last-of-type::before {
     bottom: 45px;
     right: 17px;
@@ -563,5 +565,23 @@
 
   .form-wrap__fieldset-label {
     margin-bottom: 52px;
+  }
+
+  .form-wrap__fieldset input[type="radio"] + label:hover::after,
+  .form-wrap__fieldset input[type="checkbox"] + label:hover::after,
+  .form-wrap__fieldset input[type="text"]:hover {
+    border-color: black;
+  }
+
+  .form-wrap__fieldset input[type="radio"] + label:active::after,
+  .form-wrap__fieldset input[type="checkbox"] + label:active::after,
+  .form-wrap__fieldset input[type="text"]:focus {
+    border-color: @color-pink;
+  }
+
+  .form-wrap__btn{
+    & :hover {
+
+    }
   }
 }
