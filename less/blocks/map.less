@@ -1,12 +1,13 @@
 .map {
   position: relative;
+  width: 100%;
 }
 
 .map__triangle {
   position: absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 75px;
   z-index: 2;
   background-image: url(../../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
@@ -23,6 +24,10 @@
     height: 368px;
     background-size: 700px;
   }
+
+  .map__triangle {
+    height: 107px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -33,6 +38,7 @@
   }
 
   .map__triangle {
+    height: 115px;
     top: -2px
   }
 }
