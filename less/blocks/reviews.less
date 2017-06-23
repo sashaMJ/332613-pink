@@ -76,7 +76,7 @@
 
   .reviews__research {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     height: 272px;
     padding-top: 45px;
@@ -94,7 +94,7 @@
     font-size: 18px;
     line-height: 30px;
     order: 0;
-    padding-top: 57px;
+    padding-top: 62px;
     padding-bottom: 17px;
     padding-right: 18px;
   }
@@ -116,11 +116,11 @@
   }
 
   .reviews__timer {
-    background-image: url(../img/icon-timer.svg);
+    background-image: url(../../img/icon-timer.svg);
     background-repeat: no-repeat;
     background-position-x: -50px;
     height: 345px;
-    width: 312px;
+    width: 327px;
     text-align: center;
   }
 
@@ -130,7 +130,7 @@
     font-weight: bold;
     margin-top: 58px;
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 50px;
     border: 15px solid;
     border-radius: 50%;
     width: 170px;
@@ -140,6 +140,10 @@
 
   .reviews__pagination {
     margin-bottom: 10px;
+  }
+
+  .reviews__research-descr {
+    margin-top: 13px;
   }
 }
 
@@ -181,7 +185,7 @@
     padding-top: 147px;
     padding-right: 138px;
     padding-left: 138px;
-    background-image: url(../img/icon-quotes.svg);
+    background-image: url(../../img/icon-quotes.svg);
     background-repeat: no-repeat;
     background-position-x: 445px;
     background-position-y: 34px;
@@ -239,7 +243,7 @@
   .reviews__text::after {
     position: absolute;
     content: "";
-    background: url(../img/icon-review-arrow-right.svg) no-repeat;
+    background: url(../../img/icon-review-arrow-right.svg) no-repeat;
     height: 42px;
     width: 26px;
     right: 6px;
@@ -250,11 +254,27 @@
   .reviews__text::before {
     position: absolute;
     content: "";
-    background: url(../img/icon-review-arrow-left.svg) no-repeat;
+    background: url(../../img/icon-review-arrow-left.svg) no-repeat;
     height: 42px;
     width: 26px;
     left: 10px;
     top: 173px;
     cursor: pointer;
+  }
+
+  .reviews__text:hover::before {
+    background: url(../../img/icon-review-arrow-left-hover.svg) no-repeat;
+  }
+
+  .reviews__text:hover::after {
+    background: url(../../img/icon-review-arrow-right-hover.svg) no-repeat;
+  }
+
+  .reviews__text:active::before {
+    opacity: 0.5;
+  }
+
+  .reviews__text:active::after {
+    opacity: 0.3;
   }
 }

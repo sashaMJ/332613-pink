@@ -11,7 +11,7 @@
     color: @color-pink;
     border-radius: 40px;
     padding: 15px 87px 15px 87px;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
     margin-top: 0;
   }
   &--cancel {
@@ -29,8 +29,8 @@
 
     &--active {
       display: block;
-      padding-left: 77px;
-      padding-right: 77px;
+      padding-left: 80px;
+      padding-right: 80px;
       margin-bottom: 17px;
     }
 
@@ -44,7 +44,7 @@
 
 @media (min-width: 960px) {
   .send-btn-photo {
-    margin-top: 38px;
+    margin-top: 53px;
     align-self: flex-start;
 
     &--active {
@@ -52,11 +52,25 @@
       padding-left: 40px;
       padding-right: 40px;
       margin-right: 40px;
+      &:hover {
+        background-color: @color-pink;
+        color: white;
+      }
+      &:active {
+        color:rgba(255, 255, 255, 0.5);
+      }
     }
 
     &--cancel {
       padding-left: 50px;
       padding-right: 50px;
+      &:hover {
+        border-color: #b5b9be;
+        color: rgba(194, 196, 199, 0.5);
+      }
+      &:active {
+        background-color: #b5b9be;
+      }
     }
   }
 }

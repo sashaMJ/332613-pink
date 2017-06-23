@@ -11,32 +11,24 @@
   display: inline-block;
   vertical-align: middle;
   min-height: 45px;
-  padding-top: 35px;
+  padding-top: 19px;
+  padding-bottom: 13px;
 
-  &--1 {
-    background-image: url(../../img/icon-editor-crop.svg);
-    background-repeat: no-repeat;
+  &--1,
+  &--3 {
     width: 50px;
   }
 
   &--2 {
-    background-image: url(../../img/icon-editor-fill.svg);
-    background-repeat: no-repeat;
     width: 50px;
     margin: 0 30px;
-  }
-
-  &--3 {
-    background-image: url(../../img/icon-editor-contrast.svg);
-    background-repeat: no-repeat;
-    width: 50px;
-    padding-top: 17px;
   }
 }
 
 @media (min-width: 660px) {
   .photo-filter-wrap {
     display: flex;
+    justify-content: space-between;
     min-height: 455px;
     padding-top: 57px;
     margin-bottom: 0;
@@ -46,7 +38,7 @@
     display: flex;
     flex-direction: column;
     width: 275px;
-    padding-left: 63px;
+    padding-left: 60px;
   }
 
   .photo-filter-wrap__effects-wrap {
@@ -54,25 +46,30 @@
   }
 
   .photo-filter-wrap__tools {
-    min-height: 39px;
-    width: 50px;
-    background-size: 25px;
-    padding-top: 10px;
-    margin-bottom: 22px;
+    min-height: 36px;
+    width: 40px;
+    padding-top: 4px;
+    margin-bottom: 17px;
     &--2 {
       margin-right: 0;
       margin-left: 0;
     }
-  }
-  .photo-filter-wrap__tools span {
-    border-bottom: 1px solid darkgrey;
+
+    & span {
+      border-bottom: 1px solid darkgrey;
+    }
+
+    & .photo-filter-wrap__tools-svg {
+      fill: @color-pink;
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
 @media (min-width: 960px) {
   .photo-filter-wrap {
     display: flex;
-    justify-content: space-between;
     padding-top: 57px;
     margin-bottom: 60px;
     margin-left: 10px;
@@ -84,12 +81,33 @@
     width: 450px;
     padding-left: 0;
   }
+
+  .photo-filter-wrap__tools .photo-filter-wrap__tools-svg {
+    width: 45px;
+    height: 45px;
+  }
+
   .photo-filter-wrap__tools {
-    background-size: 45px;
-    padding-top: 4px;
+    padding-top: 0;
     padding-bottom: 9px;
-    &--3 {
-      background-size: 33px;
+
+    &--3 .photo-filter-wrap__tools-svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .photo-filter-wrap__tools span {
+    margin-bottom: 10px;
+    height: 51px;
+  }
+
+  .photo-filter-wrap__tools-svg {
+    width: 45px;
+    height: 45px;
+
+    &:hover {
+      fill: #8d949b;
     }
   }
 }

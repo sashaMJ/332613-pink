@@ -34,17 +34,21 @@
   cursor: pointer;
 }
 
+.range-controls__toggle:active {
+  background-color: @color-pink;
+}
+
 @media (min-width: 660px) {
   .range-controls {
-    height: 38px;
+    height: 37px;
     position: relative;
     margin: 0;
     padding-top: 20px;
-    padding-left: 10px;
-    margin-bottom: 15px;
+    padding-left: 20px;
+    margin-bottom: 13px;
 
     &--active .range-controls__toggle {
-      left: 156px;
+      left: 165px;
       top: 15px;
     }
 
@@ -54,12 +58,13 @@
     }
 
     &--pouring .range-controls__toggle {
-      left: 35px;
+      left: 45px;
       top: 15px;
     }
 
     &--bright .range-controls__toggle {
-      left: 106px;
+      left: 115px;
+      top: 13px;
     }
   }
 
@@ -90,13 +95,13 @@
     height: 38px;
     position: relative;
     margin: 0;
-    padding-left: 45px;
+    padding-left: 52px;
     padding-top: 22px;
     margin-bottom: 10px;
 
     &--active .range-controls__toggle {
       left: 115px;
-      top: 18px
+      top: 16px
     }
 
     &--pouring {
@@ -105,7 +110,7 @@
 
     &--pouring .range-controls__toggle {
       left: 290px;
-      top: 18px
+      top: 16px
     }
 
     &--bright {
@@ -114,7 +119,7 @@
 
     &--bright .range-controls__toggle {
       left: 205px;
-      top: 18px
+      top: 16px
     }
   }
 
