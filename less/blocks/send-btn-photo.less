@@ -13,6 +13,7 @@
     padding: 15px 87px 15px 87px;
     margin-bottom: 7px;
     margin-top: 0;
+    cursor:pointer;
   }
   &--cancel {
     border: 3px solid #dddfe0;
@@ -20,24 +21,26 @@
     border-radius: 40px;
     padding: 15px 100px 15px 100px;
     margin-top: 5px;
+    cursor:pointer;
   }
 }
 
 @media (min-width: 660px) {
   .send-btn-photo {
-    margin-top: 10px;
+    margin-top: 20px;
 
     &--active {
       display: block;
       padding-left: 80px;
       padding-right: 80px;
-      margin-bottom: 17px;
+      margin: 0;
     }
 
     &--cancel {
       padding-left: 90px;
       padding-right: 90px;
-      margin-top: 7px;
+      margin-top: 25px;
+      margin-right: 7px;
     }
   }
 }
@@ -49,6 +52,7 @@
 
     &--active {
       display: inline-block;
+      vertical-align: bottom;
       padding-left: 40px;
       padding-right: 40px;
       margin-right: 40px;
