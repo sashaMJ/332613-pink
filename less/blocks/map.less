@@ -1,6 +1,8 @@
 .map {
   position: relative;
   width: 100%;
+  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
 }
 
 .map__triangle {
@@ -12,7 +14,8 @@
   background-image: url(../../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
   top: 0;
-  background-size: 100%;
+  background-size: contain;
+  background-position-x: center;
 }
 
 .map__id {
@@ -20,6 +23,11 @@
 }
 
 @media (min-width: 660px) {
+  .map {
+    background-image: url(../../img/bg-map-tablet@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
   .map__id {
     height: 368px;
     background-size: 700px;
@@ -27,10 +35,16 @@
 
   .map__triangle {
     height: 107px;
+    top: -1px;
   }
 }
 
 @media (min-width: 960px) {
+  .map {
+    background-image: url(../../img/bg-map-desktop@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
   .map__id {
     height: 510px;
     margin-bottom: 30px;
@@ -38,7 +52,28 @@
   }
 
   .map__triangle {
-    height: 115px;
+    height: 127px;
     top: -2px
+  }
+}
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url(../../img/bg-map-mobile@2x.jpg);
+  }
+}
+
+@media (min-width: 660px) and (min-resolution: 144dpi),
+(min-width: 660px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url(../../img/bg-map-tablet@2x.jpg);
+  }
+}
+
+@media (min-width: 960px) and (min-resolution: 144dpi),
+(min-width: 960px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url(../../img/bg-map-desktop@2x.jpg);
   }
 }

@@ -68,8 +68,8 @@
 .photo-card__like::after {
   position: absolute;
   content: "";
-  left: -2px;
-  top: 15px;
+  right: 106px;
+  top: 13px;
   width: 15px;
   height: 15px;
   background-image: url(../../img/icon-heart.svg);
@@ -102,17 +102,12 @@
 @media (min-width: 660px) {
   .photo-card:nth-child(1) {
     flex-basis: 100%;
-    padding-bottom: 45px;
+    padding-bottom: 47px;
 
-    & .photo-card__img-wrap {
-      width: 660px;
-      height: 510px;
-      padding: 0;
-    }
     & .photo-card__descr {
       flex-direction: row;
       flex-wrap: wrap;
-      width: 87%;
+      width: 82%;
       padding-left: 26px;
       padding-top: 24px;
     }
@@ -136,7 +131,7 @@
     }
 
     & .photo-card__like::after {
-      left: 265px;
+      right: -29px;
       top: 6px;
     }
 
@@ -185,7 +180,8 @@
   }
 
   .photo-card__insc {
-    top: 55px;
+    top: 58px;
+    right: 40px;
   }
 
 }
@@ -196,7 +192,6 @@
 
     & .photo-card__name-wrap {
       flex-basis: 60%;
-
     }
 
     & .photo-card__img-wrap {
@@ -206,10 +201,6 @@
 
     & .photo-card__user-text {
       padding-bottom: 23px;
-    }
-
-    & .photo-card__like::after {
-      left: 330px;
     }
 
     & .photo-card__descr {
