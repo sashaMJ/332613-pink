@@ -145,6 +145,7 @@
   resize: none;
   display: block;
   margin: 0 auto;
+  outline: none;
 }
 
 .form-wrap__footer {
@@ -205,6 +206,28 @@
   flex-direction: column;
 }
 
+.form-wrap__fieldset input[type="radio"] + label:active::after,
+.form-wrap__fieldset input[type="checkbox"] + label:active::after,
+.form-wrap__fieldset input[type="email"]:focus,
+.form-wrap__fieldset input[type="tel"]:focus,
+.form-wrap__fieldset input[type="text"]:focus,
+.form-wrap textarea:active {
+  border-color: @color-pink;
+  outline-color: @color-pink;
+}
+
+.form-wrap__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.form-wrap__btn span:active {
+  opacity: 0.4;
+}
+
+.form-wrap__btn:disabled {
+  background-color: @border-input-color;
+}
+
 .form-wrap__fieldset input,
 .form-wrap__fieldset textarea {
   &::placeholder {
@@ -214,7 +237,7 @@
 
 @media (min-width: 660px) {
   .form-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
   .form-wrap__fieldset label {
@@ -357,15 +380,15 @@
 
   .form-wrap textarea {
     width: 76%;
-    min-height: 167px;
-    margin: 13px auto 25px auto;
+    min-height: 175px;
+    margin: 5px auto 25px auto;
   }
 
   .form-wrap__btn {
     width: 301px;
     padding-top: 19px;
     padding-bottom: 14px;
-    margin: 63px 0 0 0;
+    margin: 65px 0 0 0;
   }
 
   .form-wrap__bth-wrap {
@@ -453,7 +476,7 @@
 
   .form-wrap__wrap-flex:nth-child(1) {
     margin-top: 35px;
-    padding-left: 11px;
+    padding-left: 0;
   }
 
   .form-wrap__wrap-flex:nth-child(3) legend {
@@ -564,7 +587,7 @@
 
   .form-wrap textarea {
     width: 785px;
-    min-height: 168px;
+    min-height: 113px;
     margin-bottom: 12px;
   }
 
@@ -585,7 +608,7 @@
   .form-wrap__btn {
     width: 301px;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 66px;
     height: 62px;
   }
 
@@ -595,27 +618,10 @@
 
   .form-wrap__fieldset input[type="radio"] + label:hover::after,
   .form-wrap__fieldset input[type="checkbox"] + label:hover::after,
-  .form-wrap__fieldset input[type="text"]:hover {
+  .form-wrap__fieldset input[type="text"]:hover,
+  .form-wrap__fieldset input[type="email"]:hover,
+  .form-wrap__fieldset input[type="tel"]:hover,
+  .form-wrap textarea:hover {
     border-color: black;
-    outline-color: inherit;
-  }
-
-  .form-wrap__fieldset input[type="radio"] + label:active::after,
-  .form-wrap__fieldset input[type="checkbox"] + label:active::after,
-  .form-wrap__fieldset input[type="text"]:focus {
-    border-color: @color-pink;
-    outline-color: @color-pink;
-  }
-
-  .form-wrap__btn:hover {
-    background-color: #1c9b5e;
-  }
-
-  .form-wrap__btn span:active {
-    opacity: 0.4;
-  }
-
-  .form-wrap__btn:disabled {
-    background-color: @border-input-color;
   }
 }

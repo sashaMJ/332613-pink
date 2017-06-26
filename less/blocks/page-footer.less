@@ -10,14 +10,13 @@
 }
 
 .page-footer__social-links {
-  vertical-align: middle;
   text-align: center;
   margin-bottom: 35px;
 }
 
 .page-footer__social {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   width: 45px;
   height: 45px;
   border-radius: 40px;
@@ -85,8 +84,17 @@
     justify-content: space-around;
   }
 
+  .page-footer__social-links {
+    margin-right: 60px;
+    margin-left: 33px;
+  }
+
   .page-footer__copyright {
-    padding-top: 12px;
+    padding-top: 9px;
+    width: 135px;
+    & span {
+      padding-right: 5px;
+    }
   }
 }
 
@@ -107,10 +115,15 @@
 
   .page-footer__social-links {
     padding-left: 0;
+    padding-top: 2px;
   }
 
-  .page-footer__copyright span {
-    font-size: 18px;
+  .page-footer__copyright {
+    width: 145px;
+    padding-top: 15px;
+    & span {
+      font-size: 18px;
+    }
   }
 
   .page-footer__wrap {
